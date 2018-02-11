@@ -43,7 +43,7 @@ namespace MyFirstWebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Default}/{action=Registration}/{id?}");
             });
         }
     }
