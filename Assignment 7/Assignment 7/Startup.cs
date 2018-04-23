@@ -25,7 +25,8 @@ namespace Assignment_7
         {
             services.AddMvc();
 
-            var connection = @"Server=DESKTOP-R79QITS\MeekSQL;Database=Assignment_7;Trusted_Connection=True;ConnectRetryCount=0";
+            //var connection = @"Server=DESKTOP-R79QITS\MeekSQL;Database=Assignment_7;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=tcp:brodinep.database.windows.net,1433;Initial Catalog=Assignment_7;Persist Security Info=False;User ID={sicma};Password={BRodi!@34};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
         }
 
